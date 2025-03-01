@@ -1,0 +1,392 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #585268;
+}
+
+.auth-box {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(to right, #2c2638, #322838);
+  box-shadow: 0 4px 10px rgb(55, 44, 60);
+  transition: transform 0.5s ease-in-out; /* Transition for smooth sliding */
+}
+
+.form-container, .image-container {
+  width: 50%;
+  height: 100%;
+  transition: transform 0.80s ease-in-out;
+}
+
+.form-container {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s forwards;
+  
+}
+.image-container img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.text-on-image {
+  position: absolute; /* Position text relative to image container */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Make text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+  top: 10px; /* Distance from the top edge of the container */
+  left: 10px; /* Distance from the left edge of the container */
+  padding: 5px; /* Optional: Padding for spacing around the text */
+}
+.text-on-image-down {
+  position: absolute; /* Position text relative to image container */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Make text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+  top: 80%; /* Distance from the top edge of the container */
+  left: 30%; /* Distance from the left edge of the container */
+  padding: 5px; /* Optional: Padding for spacing around the text */
+}
+.text2-on-image {
+  position: absolute; /* Position text relative to image container */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Make text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+  top: 15px; /* Distance from the top edge of the container */
+  left: 10px; /* Distance from the left edge of the container */
+  padding: 5px; /* Optional: Padding for spacing around the text */
+}
+.text2-on-image-down {
+  position: absolute; /* Position text relative to image container */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Make text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+  top: 80%; /* Distance from the top edge of the container */
+  left: 40; /* Distance from the left edge of the container */
+  padding: 5px; /* Optional: Padding for spacing around the text */
+}
+.AI{
+  color:  #473a5f;
+}
+
+/* Sliding Effect */
+.login-active .form-container {
+  transform: translateX(100%); /* Slide the form container out of view */
+}
+
+.login-active .image-container {
+  transform: translateX(-100%); /* Slide the image container out of view */
+}
+
+/* Form Content */
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 100%;
+  padding: 30px;
+}
+
+
+.form-content h1 {
+  margin-bottom: 8px;
+  font-size: 25px;
+  color: #ddd;
+  font-weight: 100;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+.form-content h4 {
+  font-size: 10px;
+  margin-bottom: 15px;
+  color: #ddd;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+.form-content input {
+  width: 90%;
+  height: 27px;
+  padding: 10px;
+  margin: 5px 0;
+  border:none;
+  border-radius: 5px;
+  background-color:  #473a5f;
+}
+.form-content .form-button{
+  width: 90%;
+  height: 35px;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a45fff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: font-size 0.5s ease-in-out;
+  
+  
+  
+}
+.google-btn.hovered {
+  border: 2px solid  white;
+}
+.apple-btn.hovered {
+  border: 2px solid white;
+}
+.terms.hovered {
+  text-decoration: underline 2px;
+}
+.form-button:hover {
+  font-size: 18px;
+ 
+}
+.form-content h5{
+  color: #ddd;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 8px;
+  font-weight: 20;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  font-size: 8px;
+  cursor:pointer;
+  border: none;
+  background-color: transparent;
+  color: #473a5f;
+  text-decoration: underline;
+  margin-top: 15px;
+ 
+}
+
+.social-buttons{
+  margin-top: 20px;
+}
+
+.google-btn{
+  margin-right: 10px;
+  width: 100px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  border: 1px solid whitesmoke ;
+  border-radius: 4px;
+  color: #ddd;
+  transition: border 0.3s ease-in-out;
+  
+}
+.apple-btn{
+  margin-left: 10px;
+  width: 100px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  border: 1px solid whitesmoke ;
+  border-radius: 4px;
+  color: #ddd;
+  transition: border 0.3s ease-in-out;
+
+}
+.icon{
+font-size: 12px;
+padding-right: 5px;
+color: black;
+
+}
+.terms{
+  font-size: 8px;
+  color: #473a5f;
+  text-decoration: underline;
+  transition: text-decoration 0.3s ease-in-out;
+  
+  
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 15px;
+  height: 12px;
+  margin-right: 5px; /* Space between checkbox and label */
+}
+
+.checkbox-container label {
+  font-size: 12px;
+  color: #333; /* Text color for the label */
+  cursor: pointer;
+  color: #ddd;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50%{
+     opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glow-effect {
+  0% { box-shadow: 0 0 5px rgba(26, 11, 107, 0.5); }
+  50% { box-shadow: 0 0 20px rgb(192, 43, 43); }
+  100% { box-shadow: 0 0 5px rgba(30, 255, 0, 0.5); }
+}
+
+.glow {
+  animation: glow-effect 1s ease-in-out;
+}
+
+/* Mobile view */
+
+@media (max-width: 768px) {
+  .auth-box {
+    flex-direction: column; /* Stack elements vertically */
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto; /* Let height adjust dynamically */
+    overflow: hidden; /* Prevent overflow */
+    border-radius: 10px; /* Keep rounded corners */
+    padding: 10px; /* Add spacing inside */
+  }
+
+  .image-container {
+    width: 100%;
+    height: 40vh; /* Adjust height */
+    order: -1; /* Moves image to the top */
+    padding: 10px; /* Add space so it doesn't touch the edges */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container img {
+    width: 95%; /* Reduce width slightly to prevent touching edges */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Keep smooth corners */
+  }
+
+  .form-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .text-on-image,
+  .text2-on-image {
+    max-width: 90%; /* Prevent text from overflowing */
+    word-wrap: break-word; /* Ensure long words wrap */
+    white-space: normal; /* Allow text to wrap */
+    font-size: 14px; /* Adjust font size for mobile */
+    padding: 5px 10px; /* Add spacing */
+    left: 20%; /* Center the text */
+    transform: translateX(-50%); /* Center correctly */
+    top: 5%; /* Adjust position from top */
+    text-align: center;
+  }
+  .login-active .image-container {
+    transform: translateY(0) scale(0.9); /* Slightly shrink image */
+    opacity: 0.8; /* Optional: Dim effect */
+  }
+
+  .login-active .form-container {
+    transform: translateY(0); /* Form stays in place */
+  }
+
+
+  .form-content .form-button{
+    width: 90%;
+    height: 35px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a45fff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: font-size 0.5s ease-in-out;
+    
+    
+    
+  }
+  .google-btn.hovered {
+    border: 2px solid  white;
+  }
+  .apple-btn.hovered {
+    border: 2px solid white;
+  }
+  .terms.hovered {
+    text-decoration: underline 2px;
+  }
+  .form-button:hover {
+    font-size: 18px;
+   
+  }
+  
+.google-btn{
+  margin-right: 10px;
+  width: 100px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  border: 1px solid whitesmoke ;
+  border-radius: 4px;
+  color: #ddd;
+  transition: border 0.3s ease-in-out;
+  
+}
+.apple-btn{
+  margin-left: 10px;
+  width: 100px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  border: 1px solid whitesmoke ;
+  border-radius: 4px;
+  color: #ddd;
+  transition: border 0.3s ease-in-out;
+
+}
+.terms{
+  font-size: 8px;
+  color: #473a5f;
+  text-decoration: underline;
+  transition: text-decoration 0.3s ease-in-out;
+  
+  
+}
+}
