@@ -153,10 +153,10 @@
   
 }
 .google-btn.hovered {
-  border: 2px solid  white;
+  border: 8px solid  white;
 }
 .apple-btn.hovered {
-  border: 2px solid white;
+  border: 8px solid white;
 }
 .terms.hovered {
   text-decoration: underline 2px;
